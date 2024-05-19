@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>secretcarwebshwtorenc</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body onload="showPage('home')">
+    <header>
+      <h1>HWTORENC</h1>
+    </header>
+
+    <nav>
+      <a href="#home" onclick="showPage('home')">Home</a>
+      <a href="#products" onclick="showPage('products')">Products</a>
+      <a href="#about" onclick="showPage('about')">About</a>
+      <a href="#contact" onclick="showPage('contact')">Contact</a>
+      <a href="#cart" onclick="showPage('cart')">Shopping Cart</a>
+    </nav>
+
+    <div class="container">
+      <div id="home" class="page">
+        <h2>Home</h2>
+        <p>
+          Kami menyediakan mobil limited yang sanagt terjangkau, cek produk kami
+          di laman products.
+        </p>
+      </div>
+
+      <div id="products" class="page hidden">
+        <h2>Produk kami</h2>
+        <div class="product">
+          <h3>Audi RS 6</h3>
+          <img src="D:\mrt cor\audi rs.jpg" alt="Audi RS 6 Full Modif" />
+          <p>
+            Full Modifikasi Audi RS 6, Top Speed 300 KM/H, Rata Kanan, No Minus.
+          </p>
+          <p class="price">$780.00</p>
+          <button onclick="addToCart('Audi RS 6 Full Modif', 780.00)">
+            Buy Now
+          </button>
+        </div>
+        <div class="product">
+          <h3>McLaren 720s</h3>
+          <img src="D:\mrt cor\mclaren 720.jpg" alt="McLaren 720s" />
+          <p>
+            McLaren 720s Full Original Parts, Rata Kanan, Top Speed 320 KM/H,
+            Minus BPKB.
+          </p>
+          <p class="price">$250.00</p>
+          <button onclick="addToCart('McLaren 720s', 250.00)">Buy Now</button>
+        </div>
+        <div class="product">
+          <h3>BMW i8</h3>
+          <img src="D:\mrt cor\bmw i8.jpg" alt="BMW i8" />
+          <p>
+            BMW i8 Changed Parts, Top Speed 280 KM/H, Rata Kanan, Full Modif,
+            Minus Pernah di Pakai Abner.
+          </p>
+          <p class="price">$999.99 (karena bekas pakai abner)</p>
+          <button onclick="addToCart('BMW i8', 999.99)">Buy Now</button>
+        </div>
+      </div>
+
+      <div id="about" class="page hidden">
+        <h2>About Us</h2>
+        <p>
+          Kami membuka usaha kami sejak 2019, kami sudah melakukan banyak
+          transaksi dengan client kami, kami memiliki 2 juta client di seluruh
+          dunia, website kami sudah terjamin 100% aman dan terpercaya.
+        </p>
+      </div>
+
+      <div id="contact" class="page hidden">
+        <h2>Contact Us</h2>
+        <p>
+          Kunjungi offline store kami minggu ini (satu minggu sekali berpindah):
+        </p>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2361.857296115557!2d105.26633853783703!3d-5.393388295611727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db1d6fb6bb87%3A0x15efae2d02025ee7!2sGg.%20Cemara%2C%20Jagabaya%20II%2C%20Kec.%20Way%20Halim%2C%20Kota%20Bandar%20Lampung%2C%20Lampung%2035122!5e0!3m2!1sid!2sid!4v1716129188594!5m2!1sid!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div id="cart" class="page hidden">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items">
+          <!-- Cart items will be displayed here -->
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2019 Hak Paten Moreno</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
